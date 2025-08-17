@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    
+    <title>Typing</title>
+</head>
+<body>
+    <div id="typing-box">
+        <div id="container">
+            <div id="display">X</div>
+            <div id="control">
+                <div>
+                    Time:
+                    <button data-type="time" data-value="15">15</button>
+                    <button data-type="time" data-value="30" class="active">30</button>
+                    <button data-type="time" data-value="60">60</button>
+                </div>
+                <div>
+                    Words:
+                    <button data-type="words" data-value="10">10</button>
+                    <button data-type="words" data-value="25">25</button>
+                    <button data-type="words" data-value="50">50</button>
+                </div>
+            </div>
+        </div>
+        <div contenteditable="true" id="typing" autofocus="true"></div>
+        <!--<div id="result" class="result"></div>-->
+        <div><button id="reset" onclick="start()"><span>&#x21BB;</span></button></div>
+    </div>
+</body>
+
+<script src="iniziatizepage.js"></script>
+<script src="script.js"></script>
+<script src="timerfunctionality.js"></script>
+</html>

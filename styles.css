@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1114;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#typing-box{
+    display: grid;
+    place-items: center;
+    height: 400px;
+}
+
+#typing {
+    margin: 15px;
+    padding: 15px;
+    text-align: start;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4f5866;
+    cursor: default;
+    border: none;
+    outline: none;
+    caret-color: white;
+}
+
+#typing span.correct {
+    color: #d1d0c5; /* Or whatever your 'correct' color is */
+}
+
+#typing span.incorrect {
+    color: #ca4754; /* A nice red for errors */
+}
+
+
+
+
+#container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #0a0d0f;
+    padding: 10px 20px;
+    margin: 30px;
+    border-radius: 20px;
+    width: 80%;
+    justify-content: space-between;
+    height: 50px;
+    font-family: Arial, sans-serif;
+    color: #e29929;
+    font-size: medium;
+}   
+
+#display {
+    position: absolute;
+    left: 20px;        
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+#control {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 2rem;
+}
+
+#control > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#control button {
+    padding: 6px 12px;
+    border: none;
+    background: #0a0d0f;
+    cursor: pointer;
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+#control button:hover {
+    border: 2px solid #e29929;
+}
+#control button.active {
+    color: #e29929;
+}
+
+.result{
+    display: none;
+}
+.resultshown{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 1;
+    width: 1200px;
+    height: 600px;
+    background-color: red;
+}
+
+#typing h1,h3 {
+    color: white;
+}
+
+#reset{
+    color: white;
+    background-color: #0e1114;
+    width: 120px;
+    height: 50px;
+    border: 2px solid #e29929;
+    border-radius: 12px;
+}
